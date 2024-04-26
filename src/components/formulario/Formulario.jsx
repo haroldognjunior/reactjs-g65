@@ -1,7 +1,8 @@
-export default function Formulario() {
+export default function Formulario({ setAlert }) {
   function handleSubmit(e) {
     e.preventDefault();
-    alert("Has clickeado en submit");
+    console.log("Has clickeado en submit y seteado un valor a alert");
+    setAlert("valor cambiado desde formulario");
   }
   return (
     <>

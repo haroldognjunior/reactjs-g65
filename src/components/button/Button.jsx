@@ -1,7 +1,7 @@
 import "./Button.css";
 import Button from "react-bootstrap/Button";
 
-export default function Button2() {
+export default function Button2({ alert }) {
   return (
     <>
       <Button
@@ -12,6 +12,7 @@ export default function Button2() {
         Click Me!
       </Button>
       <Button variant="danger">Peligro</Button>
+      <p>{alert}</p>
     </>
   );
 }

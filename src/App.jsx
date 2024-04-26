@@ -9,12 +9,16 @@ import Input from "./components/input/Input";
 import Formulario from "./components/formulario/Formulario";
 
 function App() {
+  const [alert, setAlert] = useState("");
+
   return (
     <>
       <Input />
-      <Formulario />
-      <Title text="Buenas noches" nombre="Renata" className="" />
-      <Button2 />
+      <Formulario setAlert={setAlert} />
+      <Button2 alert={alert} />
+
+      {/* <Title text="Buenas noches" nombre="Renata" className="" /> */}
+
       <Title text="Vida" nombre="Renato" className="blue" />
 
       <Title text="Mundo" nombre="Lucas" className="pink" />
